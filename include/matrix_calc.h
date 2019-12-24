@@ -14,12 +14,6 @@ typedef struct {
     TYPE** array;   /* Pointer to an array of type TYPE */
 } matrix_t;
 
-//typedef struct
-//{
-//    int x;          /* x: matrix row*/
-//    int y;          /* y: matrix col*/
-//}point;
-
 /* Creates a matrix and returns a pointer to the struct */
 matrix_t* create_matrix_2d(int rows, int cols);
 
@@ -69,14 +63,6 @@ void matrix_inverse(matrix_t* m, matrix_t* mdst);
 /*print matrix*/
 void print_matrix(matrix_t* m);
 
-/**
-     * @brief matrix QR decompose
-     *
-     * @param[IN]    input a matrix :N X P
-     * @param[OUT]    output Q matrix :N X N
-     * @param[OUT]    output R matrix :N X P
-     * @return ok else return err
-     * */
 void QR_decompose(matrix_t* A, matrix_t* Q, matrix_t* R);
 
 #endif
