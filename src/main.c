@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "../include/mixo_image_linear_cal.h"
 
 int main(int argc, const char **argv) 
 {
